@@ -6,7 +6,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import AuthRouter from "./AuthRouter";
+import { AuthRouter } from "./AuthRouter";
 import { JournalScreen } from "../components/journal/JournalScreen";
 
 export const AppRouter = () => {

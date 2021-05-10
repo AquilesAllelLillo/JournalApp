@@ -6,13 +6,17 @@ import { RegisterScreen } from "../components/auth/RegisterScreen";
 
 export const AuthRouter = () => {
   return (
-    <>
-      <Switch>
-        <Route exact patch="/auth/login" component={LoginScreen} />
-        <Route exact patch="/auth/register" component={RegisterScreen} />
+    <div className="auth__main">
+      <div className="auth__box-container">
+        <Switch>
+          <Route exact patch="/auth/login" component={LoginScreen} />
+          <Route exact patch="/auth/register" component={RegisterScreen} />
 
-        <Redirect to="/auth/login" />
-      </Switch>
-    </>
+          <Redirect to="/auth/login" />
+        </Switch>
+      </div>
+    </div>
   );
 };
+
+// export default AuthRouter;
