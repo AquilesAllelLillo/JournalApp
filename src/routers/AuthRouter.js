@@ -18,5 +18,3 @@ export const AuthRouter = () => {
     </div>
   );
 };
-
-// export default AuthRouter;

@@ -12,13 +12,15 @@ import { JournalScreen } from "../components/journal/JournalScreen";
 export const AppRouter = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/auth" component={AuthRouter} />
+      <div>
+        <Switch>
+          <Route path="/auth" component={AuthRouter} />
 
-        <Route exact path="/" component={JournalScreen} />
+          <Route exact path="/" component={JournalScreen} />
 
-        <Redirect to="/auth/login" />
-      </Switch>
+          <Redirect to="/auth/login" />
+        </Switch>
+      </div>
     </Router>
   );
 };
